@@ -21,7 +21,7 @@ final class CollectionTableViewCell: UITableViewCell {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 8, right: 16)
         layout.minimumInteritemSpacing = 16
         layout.minimumLineSpacing = 16
-        layout.estimatedItemSize = CGSize(width: 1, height: 1)
+        layout.estimatedItemSize = CGSize(width: 144, height: 212)
         layout.itemSize = UICollectionViewFlowLayout.automaticSize
         
         let collectionView = UICollectionView(
@@ -59,7 +59,6 @@ final class CollectionTableViewCell: UITableViewCell {
     
     private func commonInit() {
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.backgroundColor = .cyan
         clipsToBounds = false
         layer.masksToBounds = false
         
@@ -87,9 +86,9 @@ final class CollectionTableViewCell: UITableViewCell {
             
             // CollectionView
             collectionView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     

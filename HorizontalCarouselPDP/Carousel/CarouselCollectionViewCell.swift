@@ -10,15 +10,15 @@ import UIKit
 final class CarouselCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "CarouselCollectionViewCell"
 
-    private let posterImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 8
-        
-        return imageView
-    }()
+//    private let posterImageView: UIImageView = {
+//        let imageView = UIImageView()
+//        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        imageView.contentMode = .scaleAspectFill
+//        imageView.clipsToBounds = true
+//        imageView.layer.cornerRadius = 8
+//
+//        return imageView
+//    }()
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -63,7 +63,7 @@ final class CarouselCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupViewsHierarchy() {
-        containerStackView.addArrangedSubview(posterImageView)
+//        containerStackView.addArrangedSubview(posterImageView)
         containerStackView.addArrangedSubview(titleLabel)
         containerStackView.addArrangedSubview(genreLabel)
         
@@ -71,20 +71,20 @@ final class CarouselCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupConstraints() {
-        containerStackView.setCustomSpacing(0, after: titleLabel)
+//        containerStackView.setCustomSpacing(0, after: titleLabel)
 //        let bottomConstraint = containerStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
 //        bottomConstraint.priority = .defaultHigh
 
         NSLayoutConstraint.activate([
             // PosterImageView
-            posterImageView.heightAnchor.constraint(equalToConstant: 212),
+//            posterImageView.heightAnchor.constraint(equalToConstant: 212),
             
             // ContainerStackView
             containerStackView.widthAnchor.constraint(equalToConstant: 144),
             containerStackView.topAnchor.constraint(equalTo: contentView.topAnchor),// constant: 10),
             containerStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             containerStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            containerStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            containerStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
     
@@ -92,11 +92,11 @@ final class CarouselCollectionViewCell: UICollectionViewCell {
         titleLabel.text = movie.title
         genreLabel.text = movie.overview
         
-        if !movie.imageUrl.isEmpty {
-//            posterImageView.setImage(posterPath: path)
-        } else {
-            posterImageView.image = nil
-        }
+//        if !movie.imageUrl.isEmpty {
+////            posterImageView.setImage(posterPath: path)
+//        } else {
+//            posterImageView.image = nil
+//        }
     }
 }
 

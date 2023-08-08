@@ -43,9 +43,15 @@ final class ProductDetailViewController: UITableViewController {
     private func createDataSet(_ count: Int) {
         var movieDetails: [MovieDetail] = []
         for index in 1...count {
+            let overview: String
+            if index == 6 {
+                overview = "Some overview \(index)"
+            } else {
+                overview = "Movie overview with some random text going over multiple lines. Movie overview with some random text going over multiple lines. Movie overview with some random text going over multiple lines \(index)"
+            }
             let movieDetail = MovieDetail(
                 title: "Movie title \(index)",
-                overview: "Movie overview with some random text going over multiple lines. Movie overview with some random text going over multiple lines. Movie overview with some random text going over multiple lines \(index)",
+                overview: overview,
                 imageUrl: ""
             )
             movieDetails.append(movieDetail)
@@ -75,11 +81,12 @@ extension ProductDetailViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if indexPath.row == 1 {
-//            return 260
-//        } else {
-//            return UITableView.automaticDimension
-//        }
-        UITableView.automaticDimension
+        // TODO: - Niraj
+        if indexPath.row == 1 {
+            return 260
+        } else {
+            return UITableView.automaticDimension
+        }
+//        UITableView.automaticDimension
     }
 }
