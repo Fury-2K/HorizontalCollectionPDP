@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1AA22F892A81E91500AEC25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22F882A81E91500AEC25D /* AppDelegate.swift */; };
 		1AA22F8B2A81E91500AEC25D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22F8A2A81E91500AEC25D /* SceneDelegate.swift */; };
-		1AA22F8D2A81E91500AEC25D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22F8C2A81E91500AEC25D /* ViewController.swift */; };
 		1AA22F902A81E91500AEC25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA22F8E2A81E91500AEC25D /* Main.storyboard */; };
 		1AA22F922A81E91600AEC25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA22F912A81E91600AEC25D /* Assets.xcassets */; };
-		1AA22F952A81E91600AEC25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA22F932A81E91600AEC25D /* LaunchScreen.storyboard */; };
+		1AA22F9D2A81E99500AEC25D /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22F9C2A81E99500AEC25D /* ProductDetailViewController.swift */; };
+		1AA22F9F2A81EAC700AEC25D /* ProductDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22F9E2A81EAC700AEC25D /* ProductDetailTableViewCell.swift */; };
+		1AA22FA52A81EFE200AEC25D /* CarouselHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22FA42A81EFE200AEC25D /* CarouselHeaderView.swift */; };
+		1AA22FA82A81F0BC00AEC25D /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22FA72A81F0BC00AEC25D /* CarouselCollectionViewCell.swift */; };
+		1AA22FAA2A81FD2C00AEC25D /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA22FA92A81FD2C00AEC25D /* CollectionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AA22F852A81E91500AEC25D /* HorizontalCarouselPDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalCarouselPDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA22F882A81E91500AEC25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AA22F8A2A81E91500AEC25D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1AA22F8C2A81E91500AEC25D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AA22F8F2A81E91500AEC25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AA22F912A81E91600AEC25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AA22F942A81E91600AEC25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AA22F962A81E91600AEC25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA22F9C2A81E99500AEC25D /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		1AA22F9E2A81EAC700AEC25D /* ProductDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewCell.swift; sourceTree = "<group>"; };
+		1AA22FA42A81EFE200AEC25D /* CarouselHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselHeaderView.swift; sourceTree = "<group>"; };
+		1AA22FA72A81F0BC00AEC25D /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		1AA22FA92A81FD2C00AEC25D /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,24 @@
 			children = (
 				1AA22F882A81E91500AEC25D /* AppDelegate.swift */,
 				1AA22F8A2A81E91500AEC25D /* SceneDelegate.swift */,
-				1AA22F8C2A81E91500AEC25D /* ViewController.swift */,
 				1AA22F8E2A81E91500AEC25D /* Main.storyboard */,
 				1AA22F912A81E91600AEC25D /* Assets.xcassets */,
-				1AA22F932A81E91600AEC25D /* LaunchScreen.storyboard */,
 				1AA22F962A81E91600AEC25D /* Info.plist */,
+				1AA22F9C2A81E99500AEC25D /* ProductDetailViewController.swift */,
+				1AA22F9E2A81EAC700AEC25D /* ProductDetailTableViewCell.swift */,
+				1AA22FA92A81FD2C00AEC25D /* CollectionTableViewCell.swift */,
+				1AA22FA62A81EFEC00AEC25D /* Carousel */,
 			);
 			path = HorizontalCarouselPDP;
+			sourceTree = "<group>";
+		};
+		1AA22FA62A81EFEC00AEC25D /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				1AA22FA42A81EFE200AEC25D /* CarouselHeaderView.swift */,
+				1AA22FA72A81F0BC00AEC25D /* CarouselCollectionViewCell.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AA22F952A81E91600AEC25D /* LaunchScreen.storyboard in Resources */,
 				1AA22F922A81E91600AEC25D /* Assets.xcassets in Resources */,
 				1AA22F902A81E91500AEC25D /* Main.storyboard in Resources */,
 			);
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AA22F8D2A81E91500AEC25D /* ViewController.swift in Sources */,
+				1AA22FA82A81F0BC00AEC25D /* CarouselCollectionViewCell.swift in Sources */,
+				1AA22F9F2A81EAC700AEC25D /* ProductDetailTableViewCell.swift in Sources */,
+				1AA22FA52A81EFE200AEC25D /* CarouselHeaderView.swift in Sources */,
+				1AA22F9D2A81E99500AEC25D /* ProductDetailViewController.swift in Sources */,
 				1AA22F892A81E91500AEC25D /* AppDelegate.swift in Sources */,
+				1AA22FAA2A81FD2C00AEC25D /* CollectionTableViewCell.swift in Sources */,
 				1AA22F8B2A81E91500AEC25D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,14 +173,6 @@
 				1AA22F8F2A81E91500AEC25D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1AA22F932A81E91600AEC25D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AA22F942A81E91600AEC25D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,8 +303,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorizontalCarouselPDP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,8 +330,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorizontalCarouselPDP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
